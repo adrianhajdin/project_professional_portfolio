@@ -1,0 +1,125 @@
+.app__footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+}
+
+.app__footer-text {
+    margin: 2rem;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+}
+
+.app__footer-cards {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 2rem;
+
+    .app__footer-card {
+        min-width: 290px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        margin:  1rem 0;
+        padding: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #FEF4F5;
+
+        transition: all 0.3s ease-in-out;
+
+        img {
+            width: 40px;
+            height: 40px;
+            margin: 0 0.7rem;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        &:hover {
+            box-shadow: 0 0 25px #FEF4F5;
+        }
+    }
+}
+
+.app__footer-cards .app__footer-card:last-child {
+    background-color: #F2F7FB;
+}
+
+.app__footer-cards .app__footer-card:last-child:hover {
+    box-shadow: 0 0 25px #F2F7FB;
+}
+
+.app__footer-form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 2rem;
+
+    div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin:  0.75rem 0;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: var(--primary-color);
+
+        transition: all 0.3s ease-in-out;
+
+        input, textarea {
+            width: 100%;
+            padding: 0.95rem;
+            border: none;
+            border-radius: 7px;
+            background-color: var(--primary-color);
+            font-size: 1rem;
+            font-family: var(--font-base);
+            color: var(--secondary-color);
+            outline: none;
+        }
+
+        textarea {
+            height: 170px
+        }
+
+        &:hover {
+            box-shadow: 0 0 25px var(--primary-color);
+        }
+    }
+
+    button {
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        border: none;
+        background-color: var(--secondary-color);
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--white-color);
+        outline: none;
+        margin: 2rem 0;
+        font-family: var(--font-base);
+
+        transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+        cursor: pointer;
+
+        &:hover {
+            background-color: #2430af
+        }
+    }
+}

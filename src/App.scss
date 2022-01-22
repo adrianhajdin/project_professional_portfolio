@@ -1,0 +1,14 @@
+.app {
+  background-color: var(--primary-color);
+  font-family: var(--font-base);
+}
+
+.app__padding {
+  padding: 2rem;
+}
+
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

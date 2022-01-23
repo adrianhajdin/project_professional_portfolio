@@ -12,6 +12,11 @@ function NavigationDots({ active }) {
       />
       <div
         className="app__navigation-dot"
+        onClick={() => setActiveDot('about')}
+        style={activeDot === 'about' ? { backgroundColor: '#313BAC' } : {}}
+      />
+      <div
+        className="app__navigation-dot"
         onClick={() => setActiveDot('projects')}
         style={activeDot === 'projects' ? { backgroundColor: '#313BAC' } : {}}
       />

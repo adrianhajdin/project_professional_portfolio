@@ -1,4 +1,4 @@
 import images from './images';
-import { skills, experiences } from './dummy';
+import { skills, experiences, abouts } from './dummy';
 
-export { images, skills, experiences };
+export { images, skills, experiences, abouts };

@@ -34,6 +34,12 @@
       font-size: 2rem;
       font-weight: 800;
       text-align: center;
+      color: var(--black-color);
+      text-transform: capitalize;
+
+      span {
+          color: var(--secondary-color);
+      }
   }
 }
 

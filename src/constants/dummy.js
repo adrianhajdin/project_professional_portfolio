@@ -85,4 +85,27 @@ const experiences = [
   },
 ];
 
-export { skills, experiences };
+const abouts = [
+  {
+    title: 'Frontend Developer',
+    description: 'I am a frontend developer with a passion for building beautiful and functional web applications.',
+    imgUrl: images.about01,
+  },
+  {
+    title: 'Web Designer',
+    description: 'I am a web designer with a passion for creating beautiful and functional web applications.',
+    imgUrl: images.about02,
+  },
+  {
+    title: 'React Native Developer',
+    description: 'I am a React Native developer with a passion for building beautiful and functional mobile applications.',
+    imgUrl: images.about03,
+  },
+  {
+    title: 'Backend Developer',
+    description: 'I am a backend developer with a passion for building beautiful and functional web applications.',
+    imgUrl: images.about04,
+  },
+];
+
+export { skills, experiences, abouts };

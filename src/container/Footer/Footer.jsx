@@ -6,10 +6,10 @@ import './Footer.scss';
 
 function Footer() {
   return (
-    <div className="app__container app__padding footer">
+    <div className="app__container app__padding app__whitebg">
       <SocialMedia />
       <div className="app__footer app__flex">
-        <div className="app__footer-text">
+        <div className="app__head-text">
           <h2>Take a coffee & chat with me</h2>
         </div>
 
@@ -39,7 +39,7 @@ function Footer() {
           <button type="button">Send Message</button>
         </div>
       </div>
-      <NavigationDots />
+      <NavigationDots active="footer" />
     </div>
   );
 }

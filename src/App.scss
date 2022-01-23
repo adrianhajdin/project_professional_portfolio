@@ -3,6 +3,14 @@
   font-family: var(--font-base);
 }
 
+.app__whitebg {
+  background-color: var(--white-color);
+}
+
+.app__primarybg {
+  background-color: var(--primary-color);
+}
+
 .app__padding {
   padding: 2rem;
 }
@@ -17,6 +25,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.app__head-text {
+  margin: 2rem;
+
+  h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      text-align: center;
+  }
 }
 
 .app__social {
@@ -73,6 +91,13 @@
       background-color: var(--secondary-color);
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+  .app__head-text {
+    margin: 2rem 0;
+    width: 100%;
+}
 }
 
 @media screen and (max-width: 450px) {

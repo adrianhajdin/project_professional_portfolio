@@ -108,4 +108,31 @@ const abouts = [
   },
 ];
 
-export { skills, experiences, abouts };
+const testimonials = [
+  {
+    name: 'John Doe',
+    company: 'Senior Web Developer at KFC',
+    imgurl: 'https://i.ibb.co/tJkbmqh/photo-1556157382-97eda2d62296-ixlib-rb-1-2.jpg',
+    feedback: 'Orion is a great place to work. The people are friendly, helpful and very knowledgeable. I recommend Orion to anyone looking for a job.',
+  },
+  {
+    name: 'Jane Doe',
+    company: 'UI/UX Designer at Amazon Inc.',
+    imgurl: 'https://i.ibb.co/tJkbmqh/photo-1556157382-97eda2d62296-ixlib-rb-1-2.jpg',
+    feedback: 'Originally I was looking for a job as a frontend developer but I found Orion. Orion is a great place to work. The people are friendly, helpful and very knowledgeable. I recommend Orion to anyone looking for a job.',
+  },
+  {
+    name: 'Kenny Doe',
+    company: 'Frontend Developer at Google',
+    imgurl: 'https://i.ibb.co/tJkbmqh/photo-1556157382-97eda2d62296-ixlib-rb-1-2.jpg',
+    feedback: 'Super friendly and helpful people. Orion is a great place to work. The people are friendly, helpful and very knowledgeable. I recommend Orion to anyone looking for a job.',
+  },
+  {
+    name: 'Sara Doe',
+    company: 'CEO & Founder at Apple',
+    imgurl: 'https://i.ibb.co/tJkbmqh/photo-1556157382-97eda2d62296-ixlib-rb-1-2.jpg',
+    feedback: 'Love working with Orion. Orion is a great place to work. The people are friendly, helpful and very knowledgeable. I recommend Orion to anyone looking for a job.',
+  },
+];
+
+export { skills, experiences, abouts, testimonials };

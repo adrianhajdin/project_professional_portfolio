@@ -11,9 +11,18 @@
 }
 
 .app__skills-container {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: row;
+
+    @media screen and (min-width: 1580px) {
+        width: 60%;
+    }
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        flex-direction: column;
+    }    
 }
 
 .app__skills-list {
@@ -27,8 +36,8 @@
 
 
  .app__skills-item {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,8 +51,8 @@
     transition: all 0.3s ease-in-out;
 
         img {
-            width: 50px;
-            height: 50px;
+            width: 45px;
+            height: 45px;
         }
 
         p {
@@ -67,7 +76,24 @@
                 height: 35px;
             }
         }
-            
+        
+        @media screen and (min-width: 1580px) {
+            width: 120px;
+            height: 120px;
+            margin: 0.5rem;
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 900px) {
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -125,20 +151,8 @@
             }
         }
     }
-}
 
-@media screen and (max-width: 768px) {
-    .app__skills-container {
-        flex-direction: column;
-    }
-   
-    .app__skills-list {
-        margin-right: 0;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .app__skills-exp {
+    @media screen and (max-width: 900px) {
         margin-top: 2rem;
     }
 }

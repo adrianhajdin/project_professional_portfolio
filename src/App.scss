@@ -40,6 +40,10 @@
       span {
           color: var(--secondary-color);
       }
+
+      @media screen and (max-width: 450px) {
+          font-size: 1.5rem;
+      }        
   }
 }
 
@@ -53,7 +57,7 @@
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background-color: var(--primary-color);
+    background-color: var(--lightGray-color);
     margin: 0.25rem 0;
 
     display: flex;
@@ -88,7 +92,7 @@
     width: 10px;
     height: 10px;
     border-radius: 5px;
-    background-color: var(--primary-color);
+    background-color: var(--lightGray-color);
     margin: 0.5rem;
 
     transition: background-color 0.2s ease-in-out;

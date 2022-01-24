@@ -17,6 +17,11 @@ function Testimonial() {
     <div className="app__container app__padding app__primarybg">
       <SocialMedia />
       <div className="app__testimonial app__flex">
+
+        <div className="app__head-text">
+          <h2>Few <span>Feedbacks</span></h2>
+        </div>
+
         <div className="app__testimonial-item">
           <img src={testimonials[currentIndex].imgurl} alt={testimonials[currentIndex].name} />
           <div className="app__testimonial-content">

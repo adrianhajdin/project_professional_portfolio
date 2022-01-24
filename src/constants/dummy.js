@@ -135,4 +135,77 @@ const testimonials = [
   },
 ];
 
-export { skills, experiences, abouts, testimonials };
+const works = [
+  {
+    id: 'work-1',
+    title: 'Modern UI/UX Website',
+    description: 'A modern UI/UX website for a startup company.',
+    imgUrl: images.about01,
+    tags: ['UI/UX', 'Web Design', 'React JS'],
+  },
+  {
+    id: 'work-2',
+    title: 'Ewalle wallet app',
+    description: 'Ewalle wallet app built with React Native.',
+    imgUrl: images.about02,
+    tags: ['Mobile App', 'React Native', 'UI/UX', 'Javascript'],
+  },
+  {
+    id: 'work-3',
+    title: 'Shareme Website',
+    description: 'Beautiful pinterest-like website using React JS.',
+    imgUrl: images.about03,
+    tags: ['Web App', 'React JS', 'UI/UX', 'Javascript'],
+  },
+  {
+    id: 'work-4',
+    title: 'SpaceX',
+    description: 'SpaceX CRUD API built with Node JS.',
+    imgUrl: images.about04,
+    tags: ['Backend App', 'Node JS'],
+  },
+  {
+    id: 'work-5',
+    title: 'Sweet Shop',
+    description: 'An E-commerce app with beautiful UI/UX.',
+    imgUrl: images.about04,
+    tags: ['UI/UX', 'Mobile App', 'React Native', 'Javascript'],
+  },
+  {
+    id: 'work-6',
+    title: 'Community App',
+    description: 'A community app built with React Native CLI.',
+    imgUrl: images.about03,
+    tags: ['Mobile App', 'React Native', 'UI/UX', 'Javascript'],
+  },
+  {
+    id: 'work-7',
+    title: 'Web3.0 Project',
+    description: 'A web 3.0 app built with React JS & Solidity.',
+    imgUrl: images.about02,
+    tags: ['Web App', 'React JS', 'Solidity', 'Javascript'],
+  },
+  {
+    id: 'work-8',
+    title: 'MERN Memories',
+    description: 'A MERN app built with React JS & MongoDB.',
+    imgUrl: images.about01,
+    tags: ['Web App', 'React JS', 'MongoDB', 'Javascript'],
+  },
+  {
+    id: 'work-9',
+    title: 'Starbucks Clone',
+    description: 'A Starbucks clone built with React JS.',
+    imgUrl: images.about04,
+    tags: ['Web App', 'React JS', 'UI/UX', 'Javascript'],
+  },
+  {
+    id: 'work-10',
+    title: 'Blog Website',
+    description: 'A blog website built with React JS.',
+    imgUrl: images.about03,
+    tags: ['Web App', 'React JS', 'UI/UX', 'Javascript'],
+  },
+];
+
+export { skills, experiences, abouts, testimonials, works };

@@ -6,10 +6,135 @@
 .app__header {
     flex: 1;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
     padding: 0 2rem;
-    
+    z-index: 1;
+
+    @media screen and (max-width: 990px) {
+        flex-direction: column;
+    }
+            
     @media screen and (max-width: 450px) {
         padding: 0;
+    }
+}
+
+.app__header-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+
+    margin-right: 2rem;
+
+    @media screen and (max-width: 990px) {
+       margin-right: 0rem;
+       margin-bottom: 2rem;
+    }
+}
+
+.app__header-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+    background: var(--white-color);
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+    span {
+        font-size: 2.5rem;
+    }
+
+    div {
+        margin-left: 10px;
+
+        p {
+            color: var(--gray-color);
+            margin-bottom: -5px;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.app__header-description {
+    margin-top: 1.5rem;
+    display: flex;
+    
+    p {
+        font-size: 1.25rem;
+        color: var(--gray-color);
+        line-height: 1.7;
+
+        @media screen and (max-width: 450px) {
+            font-size: 1rem;
+        }
+    }
+}
+
+.app__header-btns {
+    display: flex;
+    flex-direction: row;
+
+    button {
+        font-family: var(--font-base);
+        padding: 0.5rem 1rem;
+        border: 1px solid var(--secondary-color);
+        background: var(--secondary-color);
+        color: var(--white-color);
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        margin-top: 1.7rem;
+
+        &:hover {
+            border: 1px solid var(--secondary-color);
+            background: transparent;
+            color: var(--secondary-color);
+        }
+    }
+
+    .downloadcv {
+        border: 1px solid var(--secondary-color);
+        background: transparent;
+        color: var(--secondary-color);
+        margin-left: 1rem;
+    
+        &:hover {
+            background: var(--secondary-color);
+            color: var(--white-color);
+        }
+    }
+    
+}
+
+
+.app__header-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay_circle {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
     }
 }

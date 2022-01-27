@@ -28,6 +28,8 @@ import chart from '../assets/chart.png';
 import money from '../assets/money.png';
 import work from '../assets/work.png';
 
+import circle from '../assets/circle.svg';
+
 export default {
   email,
   mobile,
@@ -56,4 +58,5 @@ export default {
   chart,
   money,
   work,
+  circle,
 };

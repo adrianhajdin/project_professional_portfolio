@@ -14,7 +14,7 @@ function Testimonial() {
   };
 
   return (
-    <div className="app__container app__padding app__primarybg" id="testimonial">
+    <div className="app__container app__primarybg" id="testimonial">
       <SocialMedia />
       <div className="app__testimonial app__flex">
 

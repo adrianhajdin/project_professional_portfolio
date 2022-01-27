@@ -4,14 +4,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 2rem;
+
     min-height: 50vh;
+    padding: 2rem;
 
     @media screen and (max-width: 450px) {
-        padding: 0;
+        padding: 2rem 1rem;
     }
 }
-
     
 .app__testimonial-item {
     width: 60%;

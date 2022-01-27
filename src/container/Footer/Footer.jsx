@@ -6,7 +6,7 @@ import './Footer.scss';
 
 function Footer() {
   return (
-    <div className="app__container app__padding app__whitebg" id="footer">
+    <div className="app__container app__whitebg" id="footer">
       <SocialMedia />
       <div className="app__footer app__flex">
         <div className="app__head-text">

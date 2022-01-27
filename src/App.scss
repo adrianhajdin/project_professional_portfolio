@@ -11,10 +11,6 @@
   background-color: var(--primary-color);
 }
 
-.app__padding {
-  padding: 2rem;
-}
-
 .app__container {
   width: 100%;
   display: flex;
@@ -52,7 +48,9 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
+
   z-index: 1;
+  padding: 1rem;
 
   div {
     width: 40px;
@@ -88,7 +86,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   z-index: 1;
+  padding: 1rem;
 
   .app__navigation-dot {
     width: 10px;
@@ -113,10 +113,6 @@
 }
 
 @media screen and (max-width: 450px) {
-  .app__padding {
-    padding: 2rem 1rem;
-  }
-
   .app__navigation, .app__social {
     display: none;
   }

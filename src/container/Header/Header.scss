@@ -7,15 +7,16 @@
     flex: 1;
     width: 100%;
     flex-direction: row;
-    padding: 0 2rem;
+
     z-index: 1;
+    padding: 2rem 2rem 0rem;
 
     @media screen and (max-width: 990px) {
         flex-direction: column;
     }
             
     @media screen and (max-width: 450px) {
-        padding: 0;
+        padding: 2rem 1rem 0;
     }
 }
 

@@ -8,7 +8,7 @@ import './Work.scss';
 
 function Work() {
   return (
-    <div className="app__container app__padding app__primarybg" id="work">
+    <div className="app__container app__primarybg" id="work">
       <SocialMedia />
       <div className="app__works app__flex">
         <div className="app__head-text">

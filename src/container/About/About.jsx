@@ -7,7 +7,7 @@ import './About.scss';
 
 function About() {
   return (
-    <div className="app__container app__padding app__whitebg" id="about">
+    <div className="app__container app__whitebg" id="about">
       <SocialMedia />
       <div className="app__about app__flex">
         <div className="app__head-text">

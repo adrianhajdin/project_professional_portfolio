@@ -8,7 +8,7 @@ import './Header.scss';
 
 function Header() {
   return (
-    <div className="app__container app__padding" id="header">
+    <div className="app__container" id="header">
       <Overlay />
       <SocialMedia />
       <div className="app__header app__flex">

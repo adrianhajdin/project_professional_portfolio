@@ -7,7 +7,7 @@ import './Skills.scss';
 
 function Skills() {
   return (
-    <div className="app__container app__padding app__whitebg">
+    <div className="app__container app__padding app__whitebg" id="skills">
       <SocialMedia />
       <div className="app__skills app__flex">
         <div className="app__head-text">

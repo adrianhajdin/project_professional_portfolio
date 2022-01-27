@@ -52,6 +52,7 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
+  z-index: 1;
 
   div {
     width: 40px;
@@ -87,6 +88,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 1;
 
   .app__navigation-dot {
     width: 10px;

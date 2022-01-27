@@ -23,6 +23,11 @@ import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
+import profile from '../assets/profile.png';
+import chart from '../assets/chart.png';
+import money from '../assets/money.png';
+import work from '../assets/work.png';
+
 export default {
   email,
   mobile,
@@ -47,4 +52,8 @@ export default {
   about02,
   about03,
   about04,
+  profile,
+  chart,
+  money,
+  work,
 };

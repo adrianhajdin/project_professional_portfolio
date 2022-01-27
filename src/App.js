@@ -4,12 +4,14 @@ import Skills from './container/Skills/Skills';
 import Footer from './container/Footer/Footer';
 import About from './container/About/About';
 import Testimonial from './container/Testimonial/Testimonial';
-import './App.scss';
 import Work from './container/Work/Work';
+import Header from './container/Header/Header';
+import './App.scss';
 
 function App() {
   return (
     <div className="app">
+      <Header />
       <About />
       <Work />
       <Skills />

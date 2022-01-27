@@ -1,39 +1,40 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable jsx-a11y/anchor-has-content */
+
 import React from 'react';
 
 function NavigationDots({ active }) {
-  const [activeDot, setActiveDot] = React.useState(active);
-
   return (
     <div className="app__navigation">
-      <div
+      <a
+        href="#header"
         className="app__navigation-dot"
-        onClick={() => setActiveDot('header')}
-        style={activeDot === 'header' ? { backgroundColor: '#313BAC' } : {}}
+        style={active === 'header' ? { backgroundColor: '#313BAC' } : {}}
       />
-      <div
+      <a
+        href="#about"
         className="app__navigation-dot"
-        onClick={() => setActiveDot('about')}
-        style={activeDot === 'about' ? { backgroundColor: '#313BAC' } : {}}
+        style={active === 'about' ? { backgroundColor: '#313BAC' } : {}}
       />
-      <div
+      <a
+        href="#work"
         className="app__navigation-dot"
-        onClick={() => setActiveDot('projects')}
-        style={activeDot === 'projects' ? { backgroundColor: '#313BAC' } : {}}
+        style={active === 'projects' ? { backgroundColor: '#313BAC' } : {}}
       />
-      <div
+      <a
+        href="#skills"
         className="app__navigation-dot"
-        onClick={() => setActiveDot('skills')}
-        style={activeDot === 'skills' ? { backgroundColor: '#313BAC' } : {}}
+        style={active === 'skills' ? { backgroundColor: '#313BAC' } : {}}
       />
-      <div
+      <a
+        href="#testimonial"
         className="app__navigation-dot"
-        onClick={() => setActiveDot('testimonials')}
-        style={activeDot === 'testimonials' ? { backgroundColor: '#313BAC' } : {}}
+        style={active === 'testimonials' ? { backgroundColor: '#313BAC' } : {}}
       />
-      <div
+      <a
+        href="#footer"
         className="app__navigation-dot"
-        onClick={() => setActiveDot('footer')}
-        style={activeDot === 'footer' ? { backgroundColor: '#313BAC' } : {}}
+        style={active === 'footer' ? { backgroundColor: '#313BAC' } : {}}
       />
     </div>
   );

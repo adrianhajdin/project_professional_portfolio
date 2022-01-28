@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
 import NavigationDots from '../../components/NavigationDots';
 import SocialMedia from '../../components/SocialMedia';
 import { images } from '../../constants';
@@ -8,7 +10,12 @@ function Footer() {
   return (
     <div className="app__container app__whitebg" id="footer">
       <SocialMedia />
-      <div className="app__footer app__flex">
+      <motion.div
+        animate={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="app__footer app__flex"
+      >
         <div className="app__head-text">
           <h2>Take a coffee & chat with me</h2>
         </div>
@@ -38,7 +45,7 @@ function Footer() {
           </div>
           <button type="button">Send Message</button>
         </div>
-      </div>
+      </motion.div>
       <NavigationDots active="footer" />
     </div>
   );

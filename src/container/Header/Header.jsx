@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import NavigationDots from '../../components/NavigationDots';
 import Overlay from '../../components/Overlay/Overlay';
@@ -11,8 +12,15 @@ function Header() {
     <div className="app__container" id="header">
       <Overlay />
       <SocialMedia />
-      <div className="app__header app__flex">
-        <div className="app__header-info">
+      <div
+        className="app__header app__flex"
+      >
+        <motion.div
+          animate={{ x: [-100, 0], opacity: [0, 1] }}
+          whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.5 }}
+          className="app__header-info"
+        >
           <div className="app__header-badge">
             <span>👋</span>
             <div>
@@ -32,13 +40,24 @@ function Header() {
             <button type="button" className="hireme">Hire Me</button>
             <button type="button" className="downloadcv">Download CV</button>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="app__header-img">
+        <motion.div
+          animate={{ x: [100, 0], opacity: [0, 1] }}
+          whileInView={{ x: [100, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.5 }}
+          className="app__header-img"
+        >
           <img src={images.profile} alt="profile_bg" />
-
-          <img src={images.circle} alt="profile_circle" className="overlay_circle" />
-        </div>
+          <motion.img
+            animate={{ scale: [0, 1] }}
+            whileInView={{ scale: [0, 1] }}
+            transition={{ duration: 1, ease: 'easeInOut' }}
+            src={images.circle}
+            alt="profile_circle"
+            className="overlay_circle"
+          />
+        </motion.div>
       </div>
       <NavigationDots active="header" />
     </div>

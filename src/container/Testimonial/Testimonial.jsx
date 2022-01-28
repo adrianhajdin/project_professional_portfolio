@@ -1,5 +1,6 @@
 import React from 'react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
+import { motion } from 'framer-motion';
 
 import NavigationDots from '../../components/NavigationDots';
 import SocialMedia from '../../components/SocialMedia';
@@ -16,7 +17,12 @@ function Testimonial() {
   return (
     <div className="app__container app__primarybg" id="testimonial">
       <SocialMedia />
-      <div className="app__testimonial app__flex">
+      <motion.div
+        animate={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="app__testimonial app__flex"
+      >
 
         <div className="app__head-text">
           <h2>Few <span>Feedbacks</span></h2>
@@ -40,7 +46,7 @@ function Testimonial() {
             <HiChevronRight />
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <NavigationDots active="testimonials" />
     </div>

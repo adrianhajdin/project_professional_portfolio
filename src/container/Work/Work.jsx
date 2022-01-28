@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 
 import NavigationDots from '../../components/NavigationDots';
 import SocialMedia from '../../components/SocialMedia';
@@ -8,9 +9,17 @@ import './Work.scss';
 
 function Work() {
   return (
-    <div className="app__container app__primarybg" id="work">
+    <div
+      className="app__container app__primarybg"
+      id="work"
+    >
       <SocialMedia />
-      <div className="app__works app__flex">
+      <motion.div
+        animate={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="app__works app__flex"
+      >
         <div className="app__head-text">
           <h2>My Creative <span>Portfolio</span></h2>
         </div>
@@ -25,18 +34,36 @@ function Work() {
 
         <div className="app__work-portfolio">
           {works.map((work, index) => (
-            <div className="app__work-item" key={index}>
+            <motion.div
+              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+              className="app__work-item"
+              key={index}
+            >
               <div className="app__work-img">
                 <img src={work.imgUrl} alt={work.name} />
 
-                <div className="app__work-hover">
-                  <div>
+                <motion.div
+                  whileHover={{ opacity: [0, 1] }}
+                  transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
+                  className="app__work-hover"
+                >
+                  <motion.div
+                    animate={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 0.90] }}
+                    transition={{ duration: 0.25 }}
+                  >
                     <AiFillEye />
-                  </div>
-                  <div>
+                  </motion.div>
+                  <motion.div
+                    animate={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 0.90] }}
+                    transition={{ duration: 0.25 }}
+                  >
                     <AiFillGithub />
-                  </div>
-                </div>
+                  </motion.div>
+                </motion.div>
               </div>
 
               <div className="app__work-content">
@@ -46,10 +73,10 @@ function Work() {
                   <p>{work.tags[0]}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
       <NavigationDots active="projects" />
     </div>
   );

@@ -33,67 +33,65 @@
 
     margin-right: 5rem;
 
+    @media screen and (max-width: 900px) {
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
- .app__skills-item {
-    width: 90px;
-    height: 90px;
+
+.app__skills-item {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 1rem;
-    border-radius: 50%;
     cursor: pointer;
-    background-color: #FEF4F5;
-
+   
     transition: all 0.3s ease-in-out;
 
+    div {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: #FEF4F5;
+        
         img {
-            width: 45px;
-            height: 45px;
-        }
-
-        p {
-            font-size: 0.56rem;
-            font-weight: 500;
-            margin-top: 0.5rem;
-            padding: 0 1rem;
+            width: 50%;
+            height: 50%;
         }
 
         &:hover {
-            box-shadow: 0 0 25px #FEF4F5;
+            box-shadow: 0 0 25px #fef4f5;
         }
+    }
 
-        @media screen and (max-width: 450px) {
+    p {
+        font-size: 0.75rem;
+        font-weight: 500;
+        margin-top: 0.5rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        margin: 0.5rem;
+
+        div {
             width: 70px;
             height: 70px;
-            margin: 0.5rem;
-
-            img {
-                width: 35px;
-                height: 35px;
-            }
         }
+            
+    }
         
-        @media screen and (min-width: 1580px) {
+    @media screen and (min-width: 1580px) {
+        div {
             width: 120px;
             height: 120px;
-            margin: 0.5rem;
-
-            img {
-                width: 60px;
-                height: 60px;
-            }
         }
-
     }
 
-    @media screen and (max-width: 900px) {
-        margin-right: 0;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 .app__skills-exp {
@@ -103,55 +101,56 @@
     align-items: flex-start;
     flex-direction: column;
 
-    .app__skills-exp-item {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin: 1rem 0;
-
-        .app__skills-exp-year {
-            margin-right: 3rem;
-
-            p {
-                font-size: 1rem;
-                font-weight: 800;
-                color: var(--secondary-color);
-            }
-
-            @media screen and (max-width: 450px) {
-                margin-right: 1rem;
-            }
-                
-        }
-
-        .app__skills-exp-works {
-            flex: 1;
-
-            .app__skills-exp-work {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: flex-start;
-                margin-bottom: 1rem;
-
-                h4 {
-                    font-size: 1rem;
-                    font-weight: 500;
-                }
-
-                p {
-                    font-size: 0.85rem;
-                    font-weight: 400;
-                    color: var(--gray-color);
-                    margin-top: 5px;
-                }
-            }
-        }
-    }
 
     @media screen and (max-width: 900px) {
         margin-top: 2rem;
     }
+}
+
+.app__skills-exp-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1rem 0;
+}
+
+.app__skills-exp-works {
+    flex: 1;
+
+    .app__skills-exp-work {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+
+        h4 {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: var(--gray-color);
+            margin-top: 5px;
+        }
+    }
+}
+
+.app__skills-exp-year {
+    margin-right: 3rem;
+
+    p {
+        font-size: 1rem;
+        font-weight: 800;
+        color: var(--secondary-color);
+    }
+
+    @media screen and (max-width: 450px) {
+        margin-right: 1rem;
+    }
+        
 }

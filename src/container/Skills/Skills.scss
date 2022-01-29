@@ -11,12 +11,10 @@
 
 .app__skills-container {
     width: 80%;
+    margin-top: 5rem;
+
     display: flex;
     flex-direction: row;
-
-    @media screen and (min-width: 1580px) {
-        width: 60%;
-    }
 
     @media screen and (max-width: 900px) {
         width: 100%;
@@ -42,12 +40,9 @@
 
 
 .app__skills-item {
-
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+
     margin: 1rem;
     cursor: pointer;
    
@@ -67,29 +62,33 @@
         &:hover {
             box-shadow: 0 0 25px #fef4f5;
         }
+
+        @media screen and (min-width: 2000px) {
+            width: 150px;
+            height: 150px;
+        }
+
+        @media screen and (max-width: 450px) {
+            width: 70px;
+            height: 70px;
+        }
     }
 
     p {
-        font-size: 0.75rem;
         font-weight: 500;
         margin-top: 0.5rem;
     }
 
+    @media screen and (min-width: 2000px) {
+        margin: 1rem 2rem;
+
+        p {
+            margin-top: 1rem;
+        }
+    }
+
     @media screen and (max-width: 450px) {
         margin: 0.5rem;
-
-        div {
-            width: 70px;
-            height: 70px;
-        }
-            
-    }
-        
-    @media screen and (min-width: 1580px) {
-        div {
-            width: 120px;
-            height: 120px;
-        }
     }
 
 }
@@ -127,12 +126,10 @@
         margin-bottom: 1rem;
 
         h4 {
-            font-size: 1rem;
             font-weight: 500;
         }
 
         p {
-            font-size: 0.85rem;
             font-weight: 400;
             color: var(--gray-color);
             margin-top: 5px;
@@ -144,7 +141,6 @@
     margin-right: 3rem;
 
     p {
-        font-size: 1rem;
         font-weight: 800;
         color: var(--secondary-color);
     }

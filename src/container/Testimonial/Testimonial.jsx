@@ -26,10 +26,10 @@ function Testimonial() {
         <div className="app__testimonial-item app__flex">
           <img src={testimonials[currentIndex].imgurl} alt={testimonials[currentIndex].name} />
           <div className="app__testimonial-content">
-            <p>{testimonials[currentIndex].feedback}</p>
+            <p className="p-text">{testimonials[currentIndex].feedback}</p>
             <div>
-              <h4>{testimonials[currentIndex].name}</h4>
-              <h5>{testimonials[currentIndex].company}</h5>
+              <h4 className="bold-text">{testimonials[currentIndex].name}</h4>
+              <h5 className="p-text">{testimonials[currentIndex].company}</h5>
             </div>
           </div>
         </div>

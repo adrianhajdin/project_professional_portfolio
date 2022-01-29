@@ -33,6 +33,17 @@
         object-fit: cover;
     }
 
+            
+    @media screen and (min-width: 2000px) {
+       min-height: 450px;
+       
+        img {
+            width: 150px;
+            height: 150px;  
+        }  
+    }
+
+
     @media screen and (max-width: 850px) {
         width: 100%;
     }
@@ -58,17 +69,20 @@
         line-height: 2rem;
         color: var(--black-color);
         font-family: var(--font-base);
+
+        @media screen and (min-width: 2000px) {
+            font-size: 2rem;
+            line-height: 3.5rem;
+        }
     }
 
     h4 {
-        font-size: 1rem;
         font-weight: 600;
         color: var(--secondary-color);
         margin-top: 2rem;
     }
 
     h5 {
-        font-size: 0.9rem;
         font-weight: 400;
         color: var(--gray-color);
         margin-top: 5px;
@@ -135,6 +149,10 @@
             img {
                 filter: grayscale(0);
             }
+        }
+
+        @media screen and (min-width: 2000px) {
+            width: 210px;
         }
 
         @media screen and (max-width: 450px) {

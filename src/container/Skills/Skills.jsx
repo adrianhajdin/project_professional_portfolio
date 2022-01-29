@@ -16,9 +16,7 @@ function Skills() {
         transition={{ duration: 0.5 }}
         className="app__skills app__flex"
       >
-        <div className="app__head-text">
-          <h2>Skills & Experiences</h2>
-        </div>
+        <h2 className="head-text">Skills & Experiences</h2>
 
         <div className="app__skills-container">
           <motion.div
@@ -30,12 +28,12 @@ function Skills() {
                 initial={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
                 key={skill.name}
-                className="app__skills-item"
+                className="app__skills-item app__flex"
               >
                 <div className="app__flex">
                   <img src={skill.icon} alt={skill.name} />
                 </div>
-                <p>{skill.name}</p>
+                <p className="p-text">{skill.name}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -46,7 +44,7 @@ function Skills() {
                 key={experience.year}
               >
                 <div className="app__skills-exp-year">
-                  <p>{experience.year}</p>
+                  <p className="bold-text">{experience.year}</p>
                 </div>
                 <motion.div
                   className="app__skills-exp-works"
@@ -59,8 +57,8 @@ function Skills() {
                       className="app__skills-exp-work"
                       key={work.name}
                     >
-                      <h4>{work.name}</h4>
-                      <p>{work.company}</p>
+                      <h4 className="bold-text">{work.name}</h4>
+                      <p className="p-text">{work.company}</p>
                     </motion.div>
                   ))}
                 </motion.div>

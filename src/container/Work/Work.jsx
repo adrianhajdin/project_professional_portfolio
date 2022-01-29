@@ -20,13 +20,11 @@ function Work() {
         transition={{ duration: 0.5 }}
         className="app__works app__flex"
       >
-        <div className="app__head-text">
-          <h2>My Creative <span>Portfolio</span></h2>
-        </div>
+        <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
 
         <div className="app__work-filter">
           {['UI/UX', 'Web App', 'Mobile App', 'React JS'].map((item, index) => (
-            <div key={index} className="app__work-filter-item">
+            <div key={index} className="app__work-filter-item app__flex p-text">
               {item}
             </div>
           ))}
@@ -38,16 +36,16 @@ function Work() {
               whileInView={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className="app__work-item"
+              className="app__work-item app__flex"
               key={index}
             >
-              <div className="app__work-img">
+              <div className="app__work-img app__flex">
                 <img src={work.imgUrl} alt={work.name} />
 
                 <motion.div
                   whileHover={{ opacity: [0, 1] }}
                   transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
-                  className="app__work-hover"
+                  className="app__work-hover app__flex"
                 >
                   <motion.div
                     animate={{ scale: [0, 1] }}
@@ -66,11 +64,11 @@ function Work() {
                 </motion.div>
               </div>
 
-              <div className="app__work-content">
-                <h4>{work.title}</h4>
+              <div className="app__work-content app__flex">
+                <h4 className="bold-text">{work.title}</h4>
 
-                <div className="app__work-tag">
-                  <p>{work.tags[0]}</p>
+                <div className="app__work-tag app__flex">
+                  <p className="p-text">{work.tags[0]}</p>
                 </div>
               </div>
             </motion.div>

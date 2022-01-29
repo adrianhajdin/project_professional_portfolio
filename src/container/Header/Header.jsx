@@ -19,16 +19,16 @@ function Header() {
           transition={{ duration: 0.5 }}
           className="app__header-info"
         >
-          <div className="app__header-badge">
+          <div className="app__header-badge app__flex">
             <span>👋</span>
-            <div>
-              <p>Hello, I am</p>
-              <h1>Micael</h1>
+            <div style={{ marginLeft: 20 }}>
+              <p className="p-text">Hello, I am</p>
+              <h1 className="head-text">Micael</h1>
             </div>
           </div>
 
-          <div className="app__header-description">
-            <p>
+          <div style={{ marginTop: 20 }}>
+            <p className="p-text">
               I am a software developer based in the city of New York, America. I am passionate about building
               software that improves the lives of people.
             </p>

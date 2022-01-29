@@ -15,19 +15,16 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+
+    margin: 3rem 0;
 
     .app__work-filter-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 0.5rem 1rem;
         border-radius: 0.5rem;
         background-color: #fff;
         color: #000;
-        font-size: 0.75rem;
-        font-family: var(--font-base);
         font-weight: 800;
+  
         cursor: pointer;
         transition: all 0.3s ease;
         margin: 0.5rem;
@@ -47,24 +44,24 @@
     
     .app__work-item {
         width: 270px;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
         margin: 1rem;
         padding: 1rem;
         border-radius: 0.5rem;
         background-color: #fff;
         color: #000;
-        font-size: 0.75rem;
-        font-family: var(--font-base);
-        font-weight: 800;
+  
         cursor: pointer;
         transition: all 0.3s ease;
 
        
         &:hover {
             box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+        }
+
+        @media screen and (min-width: 2000px) {
+            width: 450px;
         }
 
         @media screen and (max-width: 300px) {
@@ -74,12 +71,9 @@
 }
 
 .app__work-img {
-
     width: 100%;
     height: 230px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     position: relative;
 
     img {
@@ -88,80 +82,72 @@
         border-radius: 0.5rem;
     }
 
-    .app__work-hover {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0.5rem;
-        opacity: 0;
-        transition: all 0.3s ease;
-
-        div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            font-size: 0.75rem;
-            margin: 1rem;
-            font-family: var(--font-base);
-            font-weight: 800;
-            cursor: pointer;
-            transition: all 0.3s ease;
-
-            svg {
-                width: 50%;
-                height: 50%;
-                color: var(--white-color);
-            }
-
-        }
+    @media screen and (min-width: 2000px) {
+        height: 370px;
     }
 
 }
 
-.app__work-content {
-    padding: 0.5rem;
-    position: relative;
+.app__work-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 
-    h4 {
-        font-size: 1rem;
+    border-radius: 0.5rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        font-size: 0.75rem;
+        margin: 1rem;
         font-family: var(--font-base);
         font-weight: 800;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        svg {
+            width: 50%;
+            height: 50%;
+            color: var(--white-color);
+        }
+
+    }
+}
+
+.app__work-content {
+    padding: 0.5rem;
+    width: 100%;
+    position: relative;
+
+    h4 {
         margin-top: 1rem;
+
+        @media screen and (min-width: 2000px) {
+            margin-top: 4rem;
+        }
     }
 
     .app__work-tag {
         position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
         padding: 0.5rem 1rem;
         border-radius: 10px;
         background-color: #fff;
         top: -25px;
-
-        p {
-            font-size: 0.75rem;
-            font-family: var(--font-base);
-            font-weight: 800;
-        }
     }
+
 
 }

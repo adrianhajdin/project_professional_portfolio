@@ -38,11 +38,9 @@
 }
 
 .app__header-badge {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
-    padding: 1rem;
+
+    padding: 1rem 2rem;
     background: var(--white-color);
     border-radius: 15px;
 
@@ -50,37 +48,13 @@
 
     span {
         font-size: 2.5rem;
-    }
-
-    div {
-        margin-left: 10px;
-
-        p {
-            color: var(--gray-color);
-            margin-bottom: -5px;
-        }
-
-        h1 {
-            font-size: 2.25rem;
-            font-weight: bold;
+        
+        @media screen and (min-width: 2000px) {
+            font-size: 5rem;        
         }
     }
 }
 
-.app__header-description {
-    margin-top: 1.5rem;
-    display: flex;
-    
-    p {
-        font-size: 1.25rem;
-        color: var(--gray-color);
-        line-height: 1.7;
-
-        @media screen and (max-width: 450px) {
-            font-size: 1rem;
-        }
-    }
-}
 
 .app__header-btns {
     display: flex;

@@ -25,24 +25,50 @@
   align-items: center;
 }
 
-.app__head-text {
-  margin: 2rem;
-
-  h2 {
-      font-size: 2rem;
-      font-weight: 800;
-      text-align: center;
-      color: var(--black-color);
-      text-transform: capitalize;
-
-      span {
-          color: var(--secondary-color);
-      }
-
-      @media screen and (max-width: 450px) {
-          font-size: 1.5rem;
-      }        
+.head-text {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--black-color);
+  text-transform: capitalize;
+  
+  span {
+      color: var(--secondary-color);
   }
+
+  @media screen and (min-width: 2000px) {
+      font-size: 4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+      font-size: 1.5rem;
+  }        
+}
+
+.p-text {
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--gray-color);
+  line-height: 1.5;
+
+  @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+  }     
+}
+
+.bold-text {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--black-color);
+    text-align: left;
+
+    @media screen and (min-width: 2000px) {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        font-size: 0.9rem;
+    }
 }
 
 .app__social {
@@ -105,13 +131,6 @@
       background-color: var(--secondary-color);
     }
   }
-}
-
-@media screen and (max-width: 768px) {
-  .app__head-text {
-    margin: 2rem 0;
-    width: 100%;
-}
 }
 
 @media screen and (max-width: 450px) {

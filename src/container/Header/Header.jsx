@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import NavigationDots from '../../components/NavigationDots';
-import Overlay from '../../components/Overlay/Overlay';
 import SocialMedia from '../../components/SocialMedia';
 import { images } from '../../constants';
 import './Header.scss';
@@ -10,7 +9,6 @@ import './Header.scss';
 function Header() {
   return (
     <div className="app__container" id="header">
-      <Overlay />
       <SocialMedia />
       <div
         className="app__header app__flex"

@@ -1,14 +1,15 @@
 #header {
-    position: relative;
     min-height: 100vh;
+    position: relative;
+
+    padding-top: 5rem;
 }
 
 .app__header {
     flex: 1;
     width: 100%;
     flex-direction: row;
-
-    z-index: 1;
+    
     padding: 2rem 2rem 0rem;
 
     @media screen and (max-width: 990px) {
@@ -120,7 +121,6 @@
 
 .app__header-img {
     flex: 1;
-    z-index: 1;
     height: 100%;
 
     display: flex;

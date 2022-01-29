@@ -7,13 +7,17 @@ import Testimonial from './container/Testimonial/Testimonial';
 import Work from './container/Work/Work';
 import Header from './container/Header/Header';
 import Navbar from './components/Navbar/Navbar';
+import Overlay from './components/Overlay/Overlay';
 import './App.scss';
 
 function App() {
   return (
     <div className="app">
-      <Navbar />
-      <Header />
+      <div>
+        <Overlay />
+        <Navbar />
+        <Header />
+      </div>
       <About />
       <Work />
       <Skills />

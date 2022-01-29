@@ -15,7 +15,6 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  z-Index: 1;
 
   min-height: 100vh;
 }
@@ -52,15 +51,15 @@
   align-items: center;
   flex-direction: column;
 
-  z-index: 1;
   padding: 1rem;
 
   div {
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background-color: var(--lightGray-color);
+    background-color: var(--white-color);
     margin: 0.25rem 0;
+    border: 1px solid var(--lightGray-color);
 
     display: flex;
     justify-content: center;
@@ -76,6 +75,7 @@
 
     &:hover {
       background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
 
       svg {
         color: var(--white-color);
@@ -90,14 +90,13 @@
   align-items: center;
   flex-direction: column;
 
-  z-index: 1;
   padding: 1rem;
 
   .app__navigation-dot {
     width: 10px;
     height: 10px;
     border-radius: 5px;
-    background-color: var(--lightGray-color);
+    background-color: #CBCBCB;
     margin: 0.5rem;
 
     transition: background-color 0.2s ease-in-out;

@@ -3,7 +3,11 @@
     width: 100%;
     flex-direction: column;
     padding: 2rem;
-
+    
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+        
     @media screen and (max-width: 450px) {
         padding: 2rem 1rem;
     }
@@ -46,6 +50,15 @@
         &:hover {
             box-shadow: 0 0 25px #FEF4F5;
         }
+
+        @media screen and (max-width: 450px) {
+            width: 100%
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 1rem 0;
     }
 }
 
@@ -118,29 +131,34 @@
             background-color: #2430af
         }
     }
-}
 
-
-@media screen and (max-width: 768px) {
-    .app__footer {
-        flex-direction: column;
-    }
-
-    .app__footer-cards {
-        width: 100%;
-        margin: 1rem 0;
-    }
-
-    .app__footer-form {
+    @media screen and (max-width: 768px) {
         width: 100%;
         margin: 1rem 0;
     }
 }
 
-@media screen and (max-width: 450px) {
-    .app__footer-cards {
-        .app__footer-card {
-            width: 100%;
-        }
-    }
-}
+
+// @media screen and (max-width: 768px) {
+//     .app__footer {
+//         flex-direction: column;
+//     }
+
+//     .app__footer-cards {
+//         width: 100%;
+//         margin: 1rem 0;
+//     }
+
+//     .app__footer-form {
+//         width: 100%;
+//         margin: 1rem 0;
+//     }
+// }
+
+// @media screen and (max-width: 450px) {
+//     .app__footer-cards {
+//         .app__footer-card {
+//             width: 100%;
+//         }
+//     }
+// }

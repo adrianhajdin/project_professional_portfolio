@@ -120,10 +120,12 @@
 
 .app__header-img {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 1;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     position: relative;
 
     img {

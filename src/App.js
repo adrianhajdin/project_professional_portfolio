@@ -6,11 +6,13 @@ import About from './container/About/About';
 import Testimonial from './container/Testimonial/Testimonial';
 import Work from './container/Work/Work';
 import Header from './container/Header/Header';
+import Navbar from './components/Navbar/Navbar';
 import './App.scss';
 
 function App() {
   return (
     <div className="app">
+      <Navbar />
       <Header />
       <About />
       <Work />

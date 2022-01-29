@@ -24,11 +24,8 @@ import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
 
 import profile from '../assets/profile.png';
-import chart from '../assets/chart.png';
-import money from '../assets/money.png';
-import work from '../assets/work.png';
-
 import circle from '../assets/circle.svg';
+import logo from '../assets/logo.png';
 
 export default {
   email,
@@ -55,8 +52,6 @@ export default {
   about03,
   about04,
   profile,
-  chart,
-  money,
-  work,
   circle,
+  logo,
 };

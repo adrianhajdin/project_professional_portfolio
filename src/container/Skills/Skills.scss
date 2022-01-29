@@ -11,10 +11,14 @@
 
 .app__skills-container {
     width: 80%;
-    margin-top: 5rem;
+    margin-top: 3rem;
 
     display: flex;
     flex-direction: row;
+
+    @media screen and (min-width: 2000px) {
+        margin-top: 5rem;
+    }
 
     @media screen and (max-width: 900px) {
         width: 100%;

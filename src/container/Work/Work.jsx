@@ -51,6 +51,7 @@ function Work() {
                     animate={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.90] }}
                     transition={{ duration: 0.25 }}
+                    className="app__flex"
                   >
                     <AiFillEye />
                   </motion.div>
@@ -58,6 +59,7 @@ function Work() {
                     animate={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.90] }}
                     transition={{ duration: 0.25 }}
+                    className="app__flex"
                   >
                     <AiFillGithub />
                   </motion.div>

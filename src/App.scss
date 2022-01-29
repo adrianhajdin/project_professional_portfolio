@@ -82,7 +82,7 @@
   div {
     width: 40px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 50%;
     background-color: var(--white-color);
     margin: 0.25rem 0;
     border: 1px solid var(--lightGray-color);
@@ -107,6 +107,19 @@
         color: var(--white-color);
       }
     }
+
+    @media screen and (min-width: 2000px) {
+        width: 70px;
+        height: 70px;
+
+        margin: 0.5rem 0;
+
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
   }
 }
 
@@ -121,7 +134,7 @@
   .app__navigation-dot {
     width: 10px;
     height: 10px;
-    border-radius: 5px;
+    border-radius: 50%;
     background-color: #CBCBCB;
     margin: 0.5rem;
 
@@ -130,6 +143,11 @@
     &:hover {
       background-color: var(--secondary-color);
     }
+
+    @media screen and (min-width: 2000px) {
+        width: 20px;
+        height: 20px;
+    }      
   }
 }
 

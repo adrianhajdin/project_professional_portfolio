@@ -95,10 +95,7 @@
 }
 
 .app__testimonial-btns {
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-top: 1rem;
 
     div {
@@ -106,9 +103,7 @@
         height: 50px;
         border-radius: 50%;
         background-color: var(--white-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    
 
         margin: 1rem;
         transition: all 0.3s ease-in-out;
@@ -124,6 +119,16 @@
 
             svg {
                 color: var(--white-color);
+            }
+        }
+
+        @media screen and (min-width: 2000px) {
+            width: 100px;
+            height: 100px;
+
+            svg {
+                width: 45px;
+                height: 45px;
             }
         }
     }

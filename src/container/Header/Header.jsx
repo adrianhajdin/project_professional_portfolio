@@ -35,8 +35,8 @@ function Header() {
           </div>
 
           <div className="app__header-btns">
-            <button type="button" className="hireme">Hire Me</button>
-            <button type="button" className="downloadcv">Download CV</button>
+            <button type="button" className="hireme p-text">Hire Me</button>
+            <button type="button" className="downloadcv p-text">Download CV</button>
           </div>
         </motion.div>
 

@@ -4,6 +4,10 @@
     flex-direction: column;
     padding: 2rem;
 
+    @media screen and (min-width: 2000px) {
+        padding: 4rem 2rem;
+    }
+        
     @media screen and (max-width: 450px) {
         padding: 2rem 1rem;
     }
@@ -62,6 +66,7 @@
 
         @media screen and (min-width: 2000px) {
             width: 450px;
+            margin: 1rem 2rem;
         }
 
         @media screen and (max-width: 300px) {
@@ -103,15 +108,12 @@
     transition: all 0.3s ease;
 
     div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 50px;
         height: 50px;
         border-radius: 50%;
         background-color: rgba(0, 0, 0, 0.5);
         color: #fff;
-        font-size: 0.75rem;
+
         margin: 1rem;
         font-family: var(--font-base);
         font-weight: 800;
@@ -134,9 +136,10 @@
 
     h4 {
         margin-top: 1rem;
+        line-height: 1.5;
 
         @media screen and (min-width: 2000px) {
-            margin-top: 4rem;
+            margin-top: 3rem;
         }
     }
 
@@ -148,6 +151,5 @@
         background-color: #fff;
         top: -25px;
     }
-
 
 }

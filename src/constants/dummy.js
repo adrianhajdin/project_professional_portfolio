@@ -208,4 +208,35 @@ const works = [
   },
 ];
 
-export { skills, experiences, abouts, testimonials, works };
+const brands = [
+  {
+    id: 'brand-1',
+    imgUrl: images.adidas,
+  },
+  {
+    id: 'brand-2',
+    imgUrl: images.amazon,
+  },
+  {
+    id: 'brand-3',
+    imgUrl: images.bolt,
+  },
+  {
+    id: 'brand-4',
+    imgUrl: images.asus,
+  },
+  {
+    id: 'brand-5',
+    imgUrl: images.nb,
+  },
+  {
+    id: 'brand-6',
+    imgUrl: images.skype,
+  },
+  {
+    id: 'brand-7',
+    imgUrl: images.spotify,
+  },
+];
+
+export { skills, experiences, abouts, testimonials, works, brands };

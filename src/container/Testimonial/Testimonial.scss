@@ -5,8 +5,9 @@
     justify-content: center;
     align-items: center;
 
-    min-height: 50vh;
+    min-height: 100vh;
     padding: 2rem;
+    margin-top: 2rem;
 
     @media screen and (max-width: 450px) {
         padding: 2rem 1rem;
@@ -15,6 +16,7 @@
     
 .app__testimonial-item {
     width: 60%;
+    min-height: 320px;
     background-color: var(--white-color);
     display: flex;
     flex-direction: row;
@@ -31,56 +33,50 @@
         object-fit: cover;
     }
 
-
-    .app__testimonial-content {
-        flex: 1;
-        padding: 0 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: left;
-
-        p {
-            font-size: 1.25rem;
-            line-height: 2rem;
-            color: var(--black-color);
-            font-family: var(--font-base);
-        }
-
-        h4 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--secondary-color);
-            margin-top: 3rem;
-        }
-
-        h5 {
-            font-size: 0.9rem;
-            font-weight: 400;
-            color: var(--gray-color);
-            margin-top: 5px;
-        }
-    }
-
     @media screen and (max-width: 850px) {
         width: 100%;
     }
 
     @media screen and (max-width: 600px) {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    }
+}
 
-        .app__testimonial-content {
-            margin-top: 2rem;
-            padding: 0;
+.app__testimonial-content {
+    flex: 1;
+    height: 100%;
+    padding: 0 2rem;
+    text-align: left;
 
-            p {
-                font-size: 1rem;
-                line-height: 1.5rem;
-            }
-        }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    p {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        color: var(--black-color);
+        font-family: var(--font-base);
+    }
+
+    h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--secondary-color);
+        margin-top: 2rem;
+    }
+
+    h5 {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: var(--gray-color);
+        margin-top: 5px;
+    }
+
+    @media screen and (max-width: 600px) {
+        margin-top: 2rem;
+        padding: 0;
     }
 }
 
@@ -116,5 +112,37 @@
                 color: var(--white-color);
             }
         }
+    }
+}
+
+.app__testimonial-brands {
+    width: 80%;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+    div {
+        width: 150px;
+        margin: 1rem;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            filter: grayscale(1)
+        }
+
+        &:hover {
+            img {
+                filter: grayscale(0);
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            width: 120px;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
     }
 }

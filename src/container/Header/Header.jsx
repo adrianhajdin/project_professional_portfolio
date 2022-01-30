@@ -1,8 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import NavigationDots from '../../components/NavigationDots';
-import SocialMedia from '../../components/SocialMedia';
+import { NavigationDots, SocialMedia } from '../../components';
 import { images } from '../../constants';
 import './Header.scss';
 

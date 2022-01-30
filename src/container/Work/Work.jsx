@@ -2,12 +2,17 @@ import React from 'react';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 
-import NavigationDots from '../../components/NavigationDots';
-import SocialMedia from '../../components/SocialMedia';
+import { NavigationDots, SocialMedia } from '../../components';
 import { works } from '../../constants/dummy';
 import './Work.scss';
 
 function Work() {
+  const [filterWork, setFilterWork] = React.useState(works);
+
+  const handleWorkFilter = (item) => {
+    setFilterWork(works.filter((work) => work.tags.includes(item)));
+  };
+
   return (
     <div
       className="app__container app__primarybg"
@@ -24,14 +29,18 @@ function Work() {
 
         <div className="app__work-filter">
           {['UI/UX', 'Web App', 'Mobile App', 'React JS'].map((item, index) => (
-            <div key={index} className="app__work-filter-item app__flex p-text">
+            <div
+              key={index}
+              onClick={() => handleWorkFilter(item)}
+              className="app__work-filter-item app__flex p-text"
+            >
               {item}
             </div>
           ))}
         </div>
 
         <div className="app__work-portfolio">
-          {works.map((work, index) => (
+          {filterWork.map((work, index) => (
             <motion.div
               whileInView={{ opacity: 1 }}
               initial={{ opacity: 0 }}

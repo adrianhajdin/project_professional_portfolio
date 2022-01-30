@@ -1,4 +1,4 @@
 import images from './images';
-import { skills, experiences, abouts, brands } from './dummy';
+import { skills, experiences, abouts, brands, testimonials } from './dummy';
 
-export { images, skills, experiences, abouts, brands };
+export { images, skills, experiences, abouts, brands, testimonials };

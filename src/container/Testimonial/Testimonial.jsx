@@ -2,9 +2,8 @@ import React from 'react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
-import NavigationDots from '../../components/NavigationDots';
-import SocialMedia from '../../components/SocialMedia';
-import { brands, testimonials } from '../../constants/dummy';
+import { NavigationDots, SocialMedia } from '../../components';
+import { brands, testimonials } from '../../constants';
 import './Testimonial.scss';
 
 function Testimonial() {

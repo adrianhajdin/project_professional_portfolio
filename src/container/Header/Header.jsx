@@ -4,6 +4,18 @@ import { motion } from 'framer-motion';
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import './Header.scss';
+import { Circle } from '../../components';
+
+const scaleVariants = {
+  whileInView: {
+    scale: [0, 1],
+    opacity: [0, 1],
+    transition: {
+      duration: 1,
+      ease: 'easeInOut',
+    },
+  },
+};
 
 function Header() {
   return (
@@ -14,31 +26,26 @@ function Header() {
         transition={{ duration: 0.5 }}
         className="app__header-info"
       >
-        <div className="app__header-badge app__flex">
-          <span>👋</span>
-          <div style={{ marginLeft: 20 }}>
-            <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Micael</h1>
+        <div className="app__header-badge">
+          <div className="badge-cmp app__flex">
+            <span>👋</span>
+            <div style={{ marginLeft: 20 }}>
+              <p className="p-text">Hello, I am</p>
+              <h1 className="head-text">Micael</h1>
+            </div>
           </div>
-        </div>
 
-        <div style={{ marginTop: 20 }}>
-          <p className="p-text">
-            I am a software developer based in the city of New York, America. I am passionate about building
-            software that improves the lives of people.
-          </p>
-        </div>
-
-        <div className="app__header-btns">
-          <button type="button" className="hireme p-text">Hire Me</button>
-          <button type="button" className="downloadcv p-text">Download CV</button>
+          <div className="tag-cmp app__flex">
+            <p className="p-text">Web Developer</p>
+            <p className="p-text">Freelancer</p>
+          </div>
         </div>
       </motion.div>
 
       <motion.div
-        animate={{ x: [100, 0], opacity: [0, 1] }}
-        whileInView={{ x: [100, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5 }}
+        animate={{ scale: [0, 1], opacity: [0, 1] }}
+        whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+        transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
         <img src={images.profile} alt="profile_bg" />
@@ -50,6 +57,16 @@ function Header() {
           alt="profile_circle"
           className="overlay_circle"
         />
+      </motion.div>
+
+      <motion.div
+        variants={scaleVariants}
+        whileInView={scaleVariants.whileInView}
+        className="app__header-circles"
+      >
+        <Circle dimensions={100} imageUrl={images.flutter} />
+        <Circle dimensions={150} imageUrl={images.redux} />
+        <Circle dimensions={70} imageUrl={images.sass} />
       </motion.div>
     </div>
   );

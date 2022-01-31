@@ -5,7 +5,7 @@
     padding: 4rem 2rem;
 
     @media screen and (max-width: 450px) {
-        padding: 2rem 1rem;
+        padding: 4rem 1rem;
     }   
 }
 
@@ -15,10 +15,6 @@
 
     display: flex;
     flex-direction: row;
-
-    @media screen and (min-width: 2000px) {
-        margin-top: 5rem;
-    }
 
     @media screen and (max-width: 900px) {
         width: 100%;
@@ -42,13 +38,11 @@
     }
 }
 
-
 .app__skills-item {
     flex-direction: column;
     text-align: center;
 
     margin: 1rem;
-    cursor: pointer;
    
     transition: all 0.3s ease-in-out;
 
@@ -89,10 +83,6 @@
         p {
             margin-top: 1rem;
         }
-    }
-
-    @media screen and (max-width: 450px) {
-        margin: 0.5rem;
     }
 
 }

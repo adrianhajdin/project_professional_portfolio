@@ -43,8 +43,8 @@ function Header() {
       </motion.div>
 
       <motion.div
-        animate={{ scale: [0, 1], opacity: [0, 1] }}
-        whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+        animate={{ opacity: [0, 1] }}
+        whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >

@@ -39,9 +39,7 @@ function Testimonial() {
       <div className="app__testimonial-brands app__flex">
         {brands.map((brand) => (
           <motion.div
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            initial={{ opacity: 0 }}
+            whileInView={{ opacity: [0, 1] }}
             transition={{ duration: 0.5, type: 'tween' }}
             key={brand.id}
           >

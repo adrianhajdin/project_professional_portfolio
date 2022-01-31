@@ -1,6 +1,5 @@
 #home {
     position: relative;
-    padding-top: 5rem;
 }
 
 .app__header {
@@ -10,14 +9,18 @@
     align-items: center;
     flex-direction: row;
     
-    padding: 2rem 2rem 0rem;
+    padding: 6rem 2rem 0rem;
 
-    @media screen and (max-width: 990px) {
+    @media screen and (min-width: 2000px) {
+        padding-top: 8rem;
+    }
+
+    @media screen and (max-width: 1200px) {
         flex-direction: column;
     }
             
     @media screen and (max-width: 450px) {
-        padding: 2rem 1rem 0;
+        padding: 6rem 1rem 2rem;
     }
 }
 
@@ -31,15 +34,13 @@
 
     margin: 0 2rem;
 
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 1200px) {
        width: 100%;
        margin-right: 0rem;
-       margin-bottom: 2rem;
     }
 }
 
 .app__header-badge {
-
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -76,7 +77,7 @@
         }
     }
 
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 1200px) {
         justify-content: flex-start;
         align-items: flex-start;
     }
@@ -95,11 +96,10 @@
         margin-left: 2rem;
     }
 
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 1200px) {
         width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-top: 2rem;
 
         div {
             margin: 1rem;
@@ -118,7 +118,6 @@
 
     img {
         width: 100%;
-        max-height: 990px;
         object-fit: contain;
         z-index: 1;
     }
@@ -131,5 +130,9 @@
         z-index: 0;
         width: 100%;
         height: 90%;
+    }
+
+    @media screen and (max-width: 1200px) {
+        margin: 2rem 0;
     }
 }

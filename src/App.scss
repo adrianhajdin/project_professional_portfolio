@@ -13,6 +13,8 @@
 
 .app__container {
   width: 100%;
+  min-height: 100vh;
+
   display: flex;
   flex-direction: row;
 }
@@ -24,7 +26,7 @@
 }
 
 .head-text {
-  font-size: 2rem;
+  font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
   color: var(--black-color);
@@ -39,7 +41,7 @@
   }
 
   @media screen and (max-width: 450px) {
-      font-size: 1.5rem;
+      font-size: 2rem;
   }        
 }
 

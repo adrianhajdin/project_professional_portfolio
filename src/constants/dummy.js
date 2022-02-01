@@ -4,42 +4,52 @@ const skills = [
   {
     name: 'HTML5',
     icon: images.html,
+    bgColor: '#FFF4F2',
   },
   {
     name: 'CSS3',
     icon: images.css,
+    bgColor: '#dde8ee',
   },
   {
     name: 'Javascript',
     icon: images.javascript,
+    bgColor: '#fdf7d1',
   },
   {
     name: 'React JS',
     icon: images.react,
+    bgColor: '#ecfcff',
   },
   {
     name: 'Redux',
     icon: images.redux,
+    bgColor: '#efe8fa',
   },
   {
     name: 'Node JS',
     icon: images.node,
+    bgColor: '#e7fdf3',
   },
   {
     name: 'Sass',
     icon: images.sass,
+    bgColor: '#f3dde4',
   },
   {
     name: 'Figma',
     icon: images.figma,
+    bgColor: '#fcece7',
   },
   {
     name: 'Git',
     icon: images.git,
+    bgColor: '#fce8e3',
   },
   {
     name: 'React Native',
     icon: images.react,
+    bgColor: '#ecfcff',
   },
 ];
 
@@ -50,6 +60,7 @@ const experiences = [
       {
         name: 'Senior Product Designer',
         company: 'Amazon Inc.',
+        desc: 'I worked on the design of the new Amazon app. I was responsible for the design of the new app, and the development of the new app.',
       },
     ],
   },
@@ -59,10 +70,12 @@ const experiences = [
       {
         name: 'UI/UX Web Designer',
         company: 'Google',
+        desc: 'I worked on the design of the new Google app. I was responsible for the design of the new app, and the development of the new app.',
       },
       {
         name: 'Internship Graphic Designer',
         company: 'Invision',
+        desc: 'I worked on the design of the new Google app. I was responsible for the design of the new app, and the development of the new app.',
       },
     ],
   },
@@ -72,14 +85,17 @@ const experiences = [
       {
         name: 'Senior WP Frontend Developer',
         company: 'ENVATO',
+        desc: 'I worked on the design of the new Google app. I was responsible for the design of the new app, and the development of the new app.',
       },
       {
         name: 'IOS Developer',
         company: 'Zara',
+        desc: 'I worked on the design of the new Google app. I was responsible for the design of the new app, and the development of the new app.',
       },
       {
         name: 'Internship Frontend Developer',
         company: 'Apple',
+        desc: 'I worked on the design of the new Apple app. I was responsible for the design of the new app, and the development of the new app.',
       },
     ],
   },

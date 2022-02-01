@@ -1,5 +1,9 @@
 #home {
     position: relative;
+    background: url('../../assets/bgIMG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
 
     .app__wrapper {
         padding: 0;
@@ -100,8 +104,51 @@
     height: 100%;
     margin-left: 1rem;
 
+    div {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    
+        background: var(--white-color);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    
+        img {
+            width: 60%;
+            height: 60%;
+        }
+    }
+
+    div:nth-child(1) {
+        width: 100px;
+        height: 100px;
+    }
+
     div:nth-child(2) {
-        margin: 1.75rem
+        margin: 1.75rem;
+        width: 150px;
+        height: 150px;
+    }
+
+    div:nth-child(3) {
+        width: 70px;
+        height: 70px;
+    }
+
+    @media screen and (min-width: 2000px) {
+        div:nth-child(2) {
+           width: 400px;
+              height: 400px;
+        }
+
+        div:nth-child(3) {
+            width: 170px;
+            height: 170px;
+        }
+
+        div:nth-child(1) {
+            width: 200px;
+            height: 200px;
+        }
     }
 
     @media screen and (max-width: 1200px) {

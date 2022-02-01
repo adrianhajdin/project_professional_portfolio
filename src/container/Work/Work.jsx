@@ -2,12 +2,20 @@ import React from 'react';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 
-import { works } from '../../constants/dummy';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './Work.scss';
+import { client, urlFor } from '../../client';
 
 function Work() {
-  const [filterWork, setFilterWork] = React.useState(works);
+  const [works, setWorks] = React.useState([]);
+  const [filterWork, setFilterWork] = React.useState(works && works);
+
+  React.useEffect(() => {
+    const query = '*[_type == "works"]';
+    client.fetch(query).then((data) => {
+      setWorks(data);
+    });
+  }, []);
 
   const handleWorkFilter = (item) => {
     setFilterWork(works.filter((work) => work.tags.includes(item)));
@@ -39,7 +47,7 @@ function Work() {
             key={index}
           >
             <div className="app__work-img app__flex">
-              <img src={work.imgUrl} alt={work.name} />
+              <img src={urlFor(work.imgUrl)} alt={work.name} />
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}

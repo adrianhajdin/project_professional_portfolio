@@ -2,10 +2,25 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
-import { experiences, skills } from '../../constants';
 import './Skills.scss';
+import { client, urlFor } from '../../client';
 
 function Skills() {
+  const [experiences, setExperiences] = React.useState([]);
+  const [skills, setSkills] = React.useState([]);
+
+  React.useEffect(() => {
+    const query = '*[_type == "experiences"]';
+    const skillsQuery = '*[_type == "skills"]';
+
+    client.fetch(query).then((data) => {
+      setExperiences(data);
+    });
+
+    client.fetch(skillsQuery).then((data) => {
+      setSkills(data);
+    });
+  }, []);
   return (
     <>
       <h2 className="head-text">Skills & Experiences</h2>
@@ -23,7 +38,7 @@ function Skills() {
               className="app__skills-item app__flex"
             >
               <div className="app__flex">
-                <img src={skill.icon} alt={skill.name} />
+                <img src={urlFor(skill.icon)} alt={skill.name} />
               </div>
               <p className="p-text">{skill.name}</p>
             </motion.div>

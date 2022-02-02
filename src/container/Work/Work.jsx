@@ -8,17 +8,22 @@ import { client, urlFor } from '../../client';
 
 function Work() {
   const [works, setWorks] = React.useState([]);
-  const [filterWork, setFilterWork] = React.useState(works && works);
+  const [filterWork, setFilterWork] = React.useState([]);
 
   React.useEffect(() => {
     const query = '*[_type == "works"]';
     client.fetch(query).then((data) => {
       setWorks(data);
+      setFilterWork(data);
     });
   }, []);
 
   const handleWorkFilter = (item) => {
-    setFilterWork(works.filter((work) => work.tags.includes(item)));
+    if (item === 'All') {
+      setFilterWork(works);
+    } else {
+      setFilterWork(works.filter((work) => work.tags?.includes(item)));
+    }
   };
 
   return (
@@ -26,7 +31,7 @@ function Work() {
       <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
 
       <div className="app__work-filter">
-        {['UI/UX', 'Web App', 'Mobile App', 'React JS'].map((item, index) => (
+        {['All', 'UI/UX', 'Web App', 'Mobile App', 'React JS'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}

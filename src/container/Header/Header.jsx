@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import './Header.scss';
-import { Circle } from '../../components';
 
 const scaleVariants = {
   whileInView: {
@@ -43,8 +42,8 @@ function Header() {
       </motion.div>
 
       <motion.div
-        animate={{ scale: [0, 1], opacity: [0, 1] }}
-        whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+        animate={{ opacity: [0, 1] }}
+        whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
@@ -64,9 +63,14 @@ function Header() {
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        <Circle dimensions={100} imageUrl={images.flutter} />
-        <Circle dimensions={150} imageUrl={images.redux} />
-        <Circle dimensions={70} imageUrl={images.sass} />
+        {[images.flutter, images.redux, images.sass].map((circle, index) => (
+          <div className="circle-cmp app__flex" key={`circle-${index}`}>
+            <img src={circle} alt="profile_bg" />
+          </div>
+        ))}
+        {/* <Circle imageUrl={images.flutter} />
+        <Circle imageUrl={images.redux} />
+        <Circle imageUrl={images.sass} /> */}
       </motion.div>
     </div>
   );

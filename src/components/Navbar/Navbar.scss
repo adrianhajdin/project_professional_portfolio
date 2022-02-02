@@ -21,12 +21,12 @@
     align-items: center;
 
     img {
-        width: 60px;
-        height: 24px;
+        width: 90px;
+        height: 20px;
 
         @media screen and (min-width: 2000px) {
-            width: 120px;
-            height: 48px;
+            width: 180px;
+            height: 40px;
         }
     }
 }

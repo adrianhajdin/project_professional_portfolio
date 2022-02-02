@@ -28,8 +28,19 @@
             background-color: var(--secondary-color);
             color: #fff;
         }
+
+        @media screen and (min-width: 2000px) {
+            padding: 1rem 2rem;
+            border-radius: 0.85rem;
+        }
+    }
+
+    .item-active {
+        background-color: var(--secondary-color);
+        color: #fff;
     }
 }
+
 
 .app__work-portfolio {
     display: flex;
@@ -56,7 +67,9 @@
         }
 
         @media screen and (min-width: 2000px) {
-            width: 450px;
+            width: 470px;
+            padding: 1.25rem;
+            border-radius: 0.75rem;
         }
 
         @media screen and (max-width: 300px) {
@@ -76,10 +89,11 @@
         width: 100%;
         height: 100%;
         border-radius: 0.5rem;
+        object-fit: cover;
     }
 
     @media screen and (min-width: 2000px) {
-        height: 370px;
+        height: 350px;
     }
 
 }
@@ -124,6 +138,7 @@
     padding: 0.5rem;
     width: 100%;
     position: relative;
+    flex-direction: column;
 
     h4 {
         margin-top: 1rem;

@@ -3,8 +3,8 @@ import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
-import './Testimonial.scss';
 import { urlFor, client } from '../../client';
+import './Testimonial.scss';
 
 function Testimonial() {
   const [currentIndex, setCurrentIndex] = React.useState(0);
@@ -30,8 +30,7 @@ function Testimonial() {
 
   return (
     <>
-      {
-      testimonials.length && (
+      {testimonials.length && (
         <>
           <div className="app__testimonial-item app__flex">
             <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials[currentIndex].name} />
@@ -54,8 +53,7 @@ function Testimonial() {
             </div>
           </div>
         </>
-      )
-    }
+      )}
 
       <div className="app__testimonial-brands app__flex">
         {brands.map((brand) => (

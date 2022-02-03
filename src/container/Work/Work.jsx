@@ -3,8 +3,8 @@ import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
-import './Work.scss';
 import { urlFor, client } from '../../client';
+import './Work.scss';
 
 function Work() {
   const [works, setWorks] = React.useState([]);

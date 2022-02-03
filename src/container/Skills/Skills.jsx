@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import ReactTooltip from 'react-tooltip';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
-import './Skills.scss';
 import { urlFor, client } from '../../client';
+import './Skills.scss';
 
 function Skills() {
   const [experiences, setExperiences] = React.useState([]);
@@ -22,14 +22,13 @@ function Skills() {
       setSkills(data);
     });
   }, []);
+
   return (
     <>
       <h2 className="head-text">Skills & Experiences</h2>
 
       <div className="app__skills-container">
-        <motion.div
-          className="app__skills-list"
-        >
+        <motion.div className="app__skills-list">
           {skills.map((skill) => (
             <motion.div
               whileInView={{ opacity: 1 }}
@@ -57,9 +56,7 @@ function Skills() {
               <div className="app__skills-exp-year">
                 <p className="bold-text">{experience.year}</p>
               </div>
-              <motion.div
-                className="app__skills-exp-works"
-              >
+              <motion.div className="app__skills-exp-works">
                 {experience.works.map((work) => (
                   <>
                     <motion.div

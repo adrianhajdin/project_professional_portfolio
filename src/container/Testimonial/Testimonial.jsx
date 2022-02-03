@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
@@ -7,15 +7,15 @@ import { urlFor, client } from '../../client';
 import './Testimonial.scss';
 
 function Testimonial() {
-  const [currentIndex, setCurrentIndex] = React.useState(0);
-  const [testimonials, setTestimonials] = React.useState([]);
-  const [brands, setBrands] = React.useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [testimonials, setTestimonials] = useState([]);
+  const [brands, setBrands] = useState([]);
 
   const handleClick = (index) => {
     setCurrentIndex(index);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     const query = '*[_type == "testimonials"]';
     const brandsQuery = '*[_type == "brands"]';
 

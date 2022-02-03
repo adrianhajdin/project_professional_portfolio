@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
 import { urlFor, client } from '../../client';
 
-// TODO: Please import { useState, useEffect } from 'React', here and in all other places
 function About() {
-  const [abouts, setAbouts] = React.useState([]);
+  const [abouts, setAbouts] = useState([]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const query = '*[_type == "abouts"]';
 
     client.fetch(query).then((data) => {

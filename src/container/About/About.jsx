@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
-import { client, urlFor } from '../../client';
+import { urlFor, client } from '../../client';
 
 function About() {
   const [abouts, setAbouts] = React.useState([]);

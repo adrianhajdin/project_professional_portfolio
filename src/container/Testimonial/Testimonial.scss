@@ -2,15 +2,6 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    min-height: 100vh;
-    padding: 4rem 2rem;
-
-    @media screen and (max-width: 450px) {
-        padding: 2rem 1rem;
-    }
 }
     
 .app__testimonial-item {
@@ -140,7 +131,7 @@
 
     div {
         width: 150px;
-        margin: 1rem;
+        margin: 1.5rem;
 
         img {
             width: 100%;
@@ -157,10 +148,12 @@
 
         @media screen and (min-width: 2000px) {
             width: 210px;
+            margin: 2rem;
         }
 
         @media screen and (max-width: 450px) {
             width: 120px;
+            margin: 1rem;
         }
     }
 

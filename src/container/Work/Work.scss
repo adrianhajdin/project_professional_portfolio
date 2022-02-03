@@ -2,11 +2,6 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
-    padding: 4rem 2rem;
-        
-    @media screen and (max-width: 450px) {
-        padding: 2rem 1rem;
-    }
 }
 
 .app__work-filter {
@@ -16,7 +11,7 @@
     align-items: center;
     flex-wrap: wrap;
 
-    margin: 3rem 0;
+    margin: 4rem 0 2rem;
 
     .app__work-filter-item {
         padding: 0.5rem 1rem;
@@ -46,7 +41,7 @@
         width: 270px;
         flex-direction: column;
 
-        margin: 1rem;
+        margin: 2rem;
         padding: 1rem;
         border-radius: 0.5rem;
         background-color: #fff;
@@ -62,11 +57,11 @@
 
         @media screen and (min-width: 2000px) {
             width: 450px;
-            margin: 1rem 2rem;
         }
 
         @media screen and (max-width: 300px) {
             width: 100%;
+            margin: 1rem;
         }
     }
 }

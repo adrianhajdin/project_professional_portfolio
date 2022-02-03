@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './Work.scss';
-import { client, urlFor } from '../../client';
+import { urlFor, client } from '../../client';
 
 function Work() {
   const [works, setWorks] = React.useState([]);
@@ -12,6 +12,7 @@ function Work() {
 
   React.useEffect(() => {
     const query = '*[_type == "works"]';
+
     client.fetch(query).then((data) => {
       setWorks(data);
       setFilterWork(data);

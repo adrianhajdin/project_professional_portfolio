@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { images } from '../../constants';
 import './Navbar.scss';
 
+// TODO: Please use arrow functions for all components, here and in other files -> const Navbar = () => {}
 function Navbar() {
   const [toggle, setToggle] = React.useState(false);
 
@@ -34,10 +35,7 @@ function Navbar() {
             <ul>
               {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
                 <li key={item}>
-                  <a
-                    href={`#${item}`}
-                    onClick={() => setToggle(false)}
-                  >
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}
                   </a>
                 </li>

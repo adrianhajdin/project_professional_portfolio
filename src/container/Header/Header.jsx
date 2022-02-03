@@ -68,9 +68,6 @@ function Header() {
             <img src={circle} alt="profile_bg" />
           </div>
         ))}
-        {/* <Circle imageUrl={images.flutter} />
-        <Circle imageUrl={images.redux} />
-        <Circle imageUrl={images.sass} /> */}
       </motion.div>
     </div>
   );

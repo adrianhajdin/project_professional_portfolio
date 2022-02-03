@@ -5,6 +5,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
 import { urlFor, client } from '../../client';
 
+// TODO: Please import { useState, useEffect } from 'React', here and in all other places
 function About() {
   const [abouts, setAbouts] = React.useState([]);
 
@@ -15,6 +16,7 @@ function About() {
       setAbouts(data);
     });
   }, []);
+
   return (
     <>
       <h2 className="head-text">I Know that <span>Good Design</span> meant <br /> <span>Good Business</span></h2>

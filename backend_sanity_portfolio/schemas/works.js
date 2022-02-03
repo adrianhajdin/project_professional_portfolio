@@ -14,7 +14,16 @@ export default {
         title: 'Description',
         type: 'string',
       },
-
+      {
+        name: 'projectLink',
+        title: 'Project Link',
+        type: 'string',
+      },
+      {
+        name: 'codeLink',
+        title: 'Code Link',
+        type: 'string',
+      },
       {
         name: 'imgUrl',
         title: 'ImageUrl',

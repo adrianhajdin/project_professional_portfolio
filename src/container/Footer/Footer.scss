@@ -41,7 +41,10 @@
         p {
             font-weight: 500;
         }
-
+        a{
+            text-decoration: none;
+            font-weight: 500;
+        }
         &:hover {
             box-shadow: 0 0 25px #FEF4F5;
         }

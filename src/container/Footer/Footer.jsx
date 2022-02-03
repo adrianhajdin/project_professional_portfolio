@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -6,9 +6,9 @@ import { client } from '../../client';
 import './Footer.scss';
 
 function Footer() {
-  const [formData, setFormData] = React.useState([{ name: '', email: '', message: '' }]); // TODO: why is formData an array of an object, why not just an object?
-  const [isFormSubmitted, setIsFormSubmitted] = React.useState(false);
-  const [loading, setLoading] = React.useState(false);
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const { username, email, message } = formData;
 

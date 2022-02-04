@@ -92,6 +92,7 @@
   align-items: center;
   background-color: var(--secondary-color);
 
+
   svg {
     width: 70%;
     height: 70%;
@@ -109,12 +110,16 @@
 
     width: 80%;
     height: 100vh;
-    background: var(--white-color);
-
+    
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
+    
+    background: url('../../assets/bgWhite.png');
+    background-color: var(--white-color);
+    background-size: cover;
+    background-repeat: repeat;
 
     /* top box shadow */
     box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);

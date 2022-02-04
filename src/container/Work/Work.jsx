@@ -6,7 +6,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Work.scss';
 
-function Work() {
+const Work = () => {
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState('All');
@@ -107,7 +107,7 @@ function Work() {
       </motion.div>
     </>
   );
-}
+};
 
 export default AppWrap(
   MotionWrap(Work, 'app__works'),

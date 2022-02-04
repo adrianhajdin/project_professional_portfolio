@@ -5,7 +5,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
 import { urlFor, client } from '../../client';
 
-function About() {
+const About = () => {
   const [abouts, setAbouts] = useState([]);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ function About() {
       </div>
     </>
   );
-}
+};
 
 export default AppWrap(
   MotionWrap(About, 'app__about'),

@@ -5,7 +5,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
 import './Footer.scss';
 
-function Footer() {
+const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -77,7 +77,7 @@ function Footer() {
       )}
     </>
   );
-}
+};
 
 export default AppWrap(
   MotionWrap(Footer, 'app__footer'),

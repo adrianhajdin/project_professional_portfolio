@@ -5,7 +5,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
 import './Footer.scss';
 
-function Footer() {
+const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -50,11 +50,11 @@ function Footer() {
         </div>
       </div>
       {!isFormSubmitted ? (
-        <div className="app__footer-form">
-          <div>
+        <div className="app__footer-form app__flex">
+          <div className="app__flex">
             <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
           </div>
-          <div>
+          <div className="app__flex">
             <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
           </div>
           <div>
@@ -77,7 +77,7 @@ function Footer() {
       )}
     </>
   );
-}
+};
 
 export default AppWrap(
   MotionWrap(Footer, 'app__footer'),

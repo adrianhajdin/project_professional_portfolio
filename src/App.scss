@@ -32,14 +32,14 @@
   padding: 4rem 2rem;
 
   @media screen and (max-width: 450px) {
-      padding: 4rem 1rem 2rem;
+    padding: 4rem 1rem 2rem;
   }
 }
 
 .copyright {
   width: 100%;
   padding: 2rem 0 0;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -57,18 +57,18 @@
   text-align: center;
   color: var(--black-color);
   text-transform: capitalize;
-  
+
   span {
-      color: var(--secondary-color);
+    color: var(--secondary-color);
   }
 
   @media screen and (min-width: 2000px) {
-      font-size: 4rem;
+    font-size: 4rem;
   }
 
   @media screen and (max-width: 450px) {
-      font-size: 2rem;
-  }        
+    font-size: 2rem;
+  }
 }
 
 .p-text {
@@ -78,23 +78,23 @@
   line-height: 1.5;
 
   @media screen and (min-width: 2000px) {
-      font-size: 1.75rem;
-  }     
+    font-size: 1.75rem;
+  }
 }
 
 .bold-text {
-    font-size: 1rem;
-    font-weight: 800;
-    color: var(--black-color);
-    text-align: left;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--black-color);
+  text-align: left;
 
-    @media screen and (min-width: 2000px) {
-        font-size: 2rem;
-    }
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
 
-    @media screen and (max-width: 450px) {
-        font-size: 0.9rem;
-    }
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+  }
 }
 
 .app__social {
@@ -135,17 +135,16 @@
     }
 
     @media screen and (min-width: 2000px) {
-        width: 70px;
-        height: 70px;
+      width: 70px;
+      height: 70px;
 
-        margin: 0.5rem 0;
+      margin: 0.5rem 0;
 
-        svg {
-            width: 30px;
-            height: 30px;
-        }
+      svg {
+        width: 30px;
+        height: 30px;
+      }
     }
-
   }
 }
 
@@ -161,7 +160,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #CBCBCB;
+    background-color: #cbcbcb;
     margin: 0.5rem;
 
     transition: background-color 0.2s ease-in-out;
@@ -171,14 +170,15 @@
     }
 
     @media screen and (min-width: 2000px) {
-        width: 20px;
-        height: 20px;
-    }      
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
 @media screen and (max-width: 500px) {
-  .app__navigation, .app__social {
+  .app__navigation,
+  .app__social {
     display: none;
   }
 

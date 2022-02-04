@@ -6,7 +6,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Work.scss';
 
-function Work() {
+const Work = () => {
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState('All');
@@ -72,7 +72,7 @@ function Work() {
                 <a href={work.projectLink} target="_blank" rel="noreferrer">
 
                   <motion.div
-                    animate={{ scale: [0, 1] }}
+                    whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.90] }}
                     transition={{ duration: 0.25 }}
                     className="app__flex"
@@ -82,13 +82,12 @@ function Work() {
                 </a>
                 <a href={work.codeLink} target="_blank" rel="noreferrer">
                   <motion.div
-                    animate={{ scale: [0, 1] }}
+                    whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.90] }}
                     transition={{ duration: 0.25 }}
                     className="app__flex"
                   >
                     <AiFillGithub />
-
                   </motion.div>
                 </a>
               </motion.div>
@@ -107,7 +106,7 @@ function Work() {
       </motion.div>
     </>
   );
-}
+};
 
 export default AppWrap(
   MotionWrap(Work, 'app__works'),

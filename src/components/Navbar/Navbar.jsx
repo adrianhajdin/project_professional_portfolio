@@ -6,7 +6,7 @@ import { images } from '../../constants';
 import './Navbar.scss';
 
 // TODO: Please use arrow functions for all components, here and in other files -> const Navbar = () => {}
-function Navbar() {
+const Navbar = () => {
   const [toggle, setToggle] = React.useState(false);
 
   return (
@@ -28,8 +28,8 @@ function Navbar() {
 
         {toggle && (
           <motion.div
-            animate={{ x: !toggle ? '-100%' : 0 }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
+            whileInView={{ x: [300, 0] }}
+            transition={{ duration: 0.85, ease: 'easeOut' }}
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
@@ -46,6 +46,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

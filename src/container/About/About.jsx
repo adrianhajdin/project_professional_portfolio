@@ -5,7 +5,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
 import { urlFor, client } from '../../client';
 
-function About() {
+const About = () => {
   const [abouts, setAbouts] = useState([]);
 
   useEffect(() => {
@@ -24,7 +24,6 @@ function About() {
         {abouts.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
-            initial={{ opacity: 0 }}
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, type: 'tween' }}
             className="app__profile-item"
@@ -38,7 +37,7 @@ function About() {
       </div>
     </>
   );
-}
+};
 
 export default AppWrap(
   MotionWrap(About, 'app__about'),

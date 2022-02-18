@@ -3,10 +3,11 @@ export default {
     title:'Testimonials',
     type: 'document',
     fields:[
-        { name:'name',
-        title:'Name',
-        type: 'string'
-    },
+        { 
+            name:'name',
+            title:'Name',
+            type: 'string'
+        },
         {
             name:'company',
             title:'Company',
@@ -19,8 +20,8 @@ export default {
             options: {
               hotspot: true,
             },
-        }
-        ,  {
+        },  
+        {
             name:'feedback',
             title:'Feedback',
             type:'string'

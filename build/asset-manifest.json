@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c7dba59e.css",
+    "main.js": "/static/js/main.e73fafeb.js",
+    "static/media/about04.png": "/static/media/about04.fa7b3a72ed32b0e25bfb.png",
+    "static/media/about02.png": "/static/media/about02.7a3df03410ee756268ec.png",
+    "static/media/about01.png": "/static/media/about01.080509de05322b7aafda.png",
+    "static/media/bgIMG.png": "/static/media/bgIMG.c39101e520e2997fc6d4.png",
+    "static/media/profile.png": "/static/media/profile.5d1f721ea7b8efd84ffc.png",
+    "static/media/bgWhite.png": "/static/media/bgWhite.79658cadae50b3b16ee5.png",
+    "static/media/about03.png": "/static/media/about03.c26c2547bb1a423cf283.png",
+    "static/media/spotify.png": "/static/media/spotify.2b5e9be1eb1ab501e7cd.png",
+    "static/media/nb.png": "/static/media/nb.98f3253e32cc67a4cb5e.png",
+    "static/media/asus.png": "/static/media/asus.514bc34955008a92e09f.png",
+    "static/media/adidas.png": "/static/media/adidas.83df8153294f9137d308.png",
+    "static/media/bolt.png": "/static/media/bolt.64e7d9d30ece478ef3a0.png",
+    "static/media/redux.png": "/static/media/redux.c9be37e0fece29c624b0.png",
+    "static/media/sass.png": "/static/media/sass.36e863bfbcb25c109d00.png",
+    "static/media/node.png": "/static/media/node.8683d89cf78ffae3d1f7.png",
+    "static/media/cpp.png": "/static/media/cpp.9002a804bbfa0354d0b8.png",
+    "static/media/graphql.png": "/static/media/graphql.0372057049181c5de51a.png",
+    "static/media/amazon.png": "/static/media/amazon.0a8be1f53138b5c52456.png",
+    "static/media/mobile.png": "/static/media/mobile.145d9ce0157a56f8fcd8.png",
+    "static/media/email.png": "/static/media/email.37b9e890eea501421fbf.png",
+    "static/media/figma.png": "/static/media/figma.152e55329b6f1915967e.png",
+    "static/media/css.png": "/static/media/css.5721a3928fe43de6baf8.png",
+    "static/media/git.png": "/static/media/git.a54d3fa44e02f2f61e69.png",
+    "static/media/skype.png": "/static/media/skype.c8d7ee175da5b4c8a8ab.png",
+    "index.html": "/index.html",
+    "static/media/circle.svg": "/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
+    "main.c7dba59e.css.map": "/static/css/main.c7dba59e.css.map",
+    "main.e73fafeb.js.map": "/static/js/main.e73fafeb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7dba59e.css",
+    "static/js/main.e73fafeb.js"
+  ]
+}

@@ -28,6 +28,7 @@ module.exports = {
         maxEOF: 1,
       },
     ],
+    'no-unused-vars': 1,
     'no-underscore-dangle': [
       'error',
       {

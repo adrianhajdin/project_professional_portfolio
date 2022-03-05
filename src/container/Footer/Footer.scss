@@ -128,3 +128,38 @@
     margin: 1rem 0;
   }
 }
+.thankyou {
+	font-size: 2rem;
+	font-weight: 600;
+	text-align: center;
+	color: var(--white-color);
+	background-color: #4bb543;
+	padding: 1.2rem;
+	border-radius: 4px;
+	box-shadow: 0 0 25px var(--primary-color);
+
+	@media screen and (min-width: 2000px) {
+		font-size: 4rem;
+	}
+
+	@media screen and (max-width: 450px) {
+		font-size: 2rem;
+	}
+}
+
+.text-danger {
+	font-size: 0.8rem;
+	text-align: left;
+	color: red;
+	line-height: 1.5;
+	width: 50%;
+
+	@media screen and (min-width: 2000px) {
+		font-size: 1.75rem;
+	}
+}
+
+.danger {
+	color: red !important;
+}
+

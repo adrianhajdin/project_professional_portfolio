@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Mandeep Singhmar <msingh8328@gmail.com>",
+  "author": "Mark Aloo <mbenjerminne@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
@@ -14,13 +14,13 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/base": "^2.25.4",
-    "@sanity/core": "^2.25.0",
-    "@sanity/default-layout": "^2.25.4",
-    "@sanity/default-login": "^2.24.1",
-    "@sanity/desk-tool": "^2.25.4",
+    "@sanity/base": "^2.29.3",
+    "@sanity/core": "^2.29.3",
+    "@sanity/default-layout": "^2.29.3",
+    "@sanity/default-login": "^2.29.3",
+    "@sanity/desk-tool": "^2.29.4",
     "@sanity/eslint-config-studio": "^2.0.0",
-    "@sanity/vision": "^2.25.4",
+    "@sanity/vision": "^2.29.3",
     "eslint": "^8.6.0",
     "prop-types": "^15.7",
     "react": "^17.0",
@@ -31,6 +31,6 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git@github.com:adrianhajdin/project_professional_portfolio.git"
+    "url": "git@github.com/thecodeinfluencer/project_professional_portfolio.git"
   }
 }

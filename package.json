@@ -6,7 +6,7 @@
     "@sanity/client": "^2.23.2",
     "@sanity/image-url": "^1.0.1",
     "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
+    "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^13.5.0",
     "framer-motion": "^6.2.3",
     "node-sass": "^7.0.1",

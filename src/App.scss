@@ -82,6 +82,18 @@
   }
 }
 
+.p-err {
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--red-color);
+  line-height: 1.5;
+  padding-left: 20px;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
+}
+
 .bold-text {
   font-size: 1rem;
   font-weight: 800;
@@ -118,6 +130,8 @@
     align-items: center;
 
     transition: all 0.3s ease-in-out;
+
+    cursor: pointer;
 
     svg {
       width: 15px;

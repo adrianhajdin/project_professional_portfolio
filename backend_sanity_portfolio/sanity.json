@@ -1,23 +1,22 @@
 {
   "root": true,
+  "api": {
+    "projectId": "zavkan0a",
+    "dataset": "production"
+  },
   "project": {
     "name": "backend_sanity_portfolio"
-  },
-  "api": {
-    "projectId": "5aijr8b2",
-    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool"
+    "@sanity/desk-tool",
+    "order-documents"
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [

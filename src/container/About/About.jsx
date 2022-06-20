@@ -18,7 +18,10 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">I Know that <span>Good Design</span> <br />means  <span>Good Business</span></h2>
+      <h2 className="head-text">
+        I Know that <span>Good Apps</span> <br />
+        means <span>Good Business</span>
+      </h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
@@ -30,8 +33,22 @@ const About = () => {
             key={about.title + index}
           >
             <img src={urlFor(about.imgUrl)} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
-            <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
+            <h2
+              className="bold-text"
+              style={{
+                width: '100%',
+                marginTop: 20,
+                textAlign: 'center',
+              }}
+            >
+              {about.title}
+            </h2>
+            <p
+              className="p-text"
+              style={{ marginTop: 10, textAlign: 'center' }}
+            >
+              {about.description}
+            </p>
           </motion.div>
         ))}
       </div>

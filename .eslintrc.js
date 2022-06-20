@@ -3,10 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'airbnb',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -14,20 +11,16 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
   rules: {
     'react/function-component-definition': 0,
     'import/extensions': 0,
     'react/prop-types': 0,
     'linebreak-style': 0,
+    'implicit-arrow-linebreak': 1,
     'react/state-in-constructor': 0,
     'import/prefer-default-export': 0,
-    'max-len': [
-      2,
-      550,
-    ],
+    'max-len': [2, 550],
     'no-multiple-empty-lines': [
       'error',
       {
@@ -35,19 +28,11 @@ module.exports = {
         maxEOF: 1,
       },
     ],
+    'no-unused-vars': 1,
     'no-underscore-dangle': [
       'error',
       {
-        allow: [
-          '_d',
-          '_dh',
-          '_h',
-          '_id',
-          '_m',
-          '_n',
-          '_t',
-          '_text',
-        ],
+        allow: ['_d', '_dh', '_h', '_id', '_m', '_n', '_t', '_text'],
       },
     ],
     'object-curly-newline': 0,
@@ -61,19 +46,9 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
-        components: [
-          'Link',
-        ],
-        specialLink: [
-          'to',
-          'hrefLeft',
-          'hrefRight',
-        ],
-        aspects: [
-          'noHref',
-          'invalidHref',
-          'preferButton',
-        ],
+        components: ['Link'],
+        specialLink: ['to', 'hrefLeft', 'hrefRight'],
+        aspects: ['noHref', 'invalidHref', 'preferButton'],
       },
     ],
   },

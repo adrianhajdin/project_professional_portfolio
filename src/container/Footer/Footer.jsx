@@ -13,6 +13,7 @@ const Footer = () => {
   });
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const { username, email, message } = formData;
 
@@ -22,7 +23,14 @@ const Footer = () => {
   };
 
   const handleSubmit = () => {
+    setError('');
     setLoading(true);
+
+    if (!username || !email || !message) {
+      setError('Please fill all fields');
+      setLoading(false);
+      return;
+    }
 
     const contact = {
       _type: 'contact',
@@ -53,7 +61,7 @@ const Footer = () => {
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="p-text">
+          <a href="tel:+254799055101" className="p-text">
             +254 799 055 101
           </a>
         </div>
@@ -68,6 +76,7 @@ const Footer = () => {
               name="username"
               value={username}
               onChange={handleChangeInput}
+              required
             />
           </div>
           <div className="app__flex">
@@ -78,6 +87,7 @@ const Footer = () => {
               name="email"
               value={email}
               onChange={handleChangeInput}
+              required
             />
           </div>
           <div>
@@ -87,8 +97,14 @@ const Footer = () => {
               value={message}
               name="message"
               onChange={handleChangeInput}
+              required
             />
           </div>
+          {!!error && (
+            <div>
+              <div className="p-err">{error}</div>
+            </div>
+          )}
           <button type="button" className="p-text" onClick={handleSubmit}>
             {!loading ? 'Send Message' : 'Sending...'}
           </button>

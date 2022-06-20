@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy-github": "cd build && git add . && git commit -m \"build\" && git push origin main && cd .."
+    "deploy-github": "cd build && git init && git add . && git commit -m \"build\" && git remote add origin https://github.com/thecodeinfluencer/thecodeinfluencer.github.io.git && git branch main && git push -f origin main && cd .."
   },
   "eslintConfig": {
     "extends": [

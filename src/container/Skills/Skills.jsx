@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import ReactTooltip from 'react-tooltip';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
@@ -66,10 +66,11 @@ const Skills = () => {
                       data-for={work.name}
                       key={work.name}
                     >
-                      <h4 className="bold-text">{work.name}</h4>
+                      <h4 className="bold-text" id={work.name.replace(/\s/g, "")}>{work.name}</h4>
                       <p className="p-text">{work.company}</p>
                     </motion.div>
                     <ReactTooltip
+                      anchorSelect={'#' + work.name.replace(/\s/g, "")}
                       id={work.name}
                       effect="solid"
                       arrowColor="#fff"
